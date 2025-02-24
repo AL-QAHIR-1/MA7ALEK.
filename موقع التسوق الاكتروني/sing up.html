@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إنشاء حساب</title>
+    <link rel="stylesheet" href="m.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #84fab0, #8fd3f4);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .signup-container {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 400px;
+            backdrop-filter: blur(10px);
+        }
+        .signup-container h1 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        input {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            outline: none;
+            background: #f3f3f3;
+            transition: 0.3s;
+        }
+        input:focus {
+            background: #fff;
+            box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+        }
+        .signup-btn {
+            width: 100%;
+            padding: 12px;
+            background: #34a853;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .signup-btn:hover {
+            background: #2e8b47;
+        }
+    </style>
+</head>
+<body>
+    <div class="signup-container">
+        <h1>إنشاء حساب جديد</h1>
+        <p>أدخل بياناتك لإنشاء حسابك</p>
+        <input type="text" placeholder="الاسم الكامل">
+        <input type="email" placeholder="البريد الإلكتروني">
+        <input type="password" placeholder="كلمة المرور">
+        <input type="password" placeholder="تأكيد كلمة المرور">
+        <button class="signup-btn" onclick="redirectToHome()">إنشاء الحساب</button>
+    </div>
+    <script>
+        function redirectToHome() {
+            // هنا يمكن إضافة تحقق من المدخلات قبل التوجيه
+            window.location.href = 'index.html'; // توجيه المستخدم إلى الصفحة الرئيسية بعد التسجيل
+        }
+    </script>
+</body>
+</html>
